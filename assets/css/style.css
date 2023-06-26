@@ -18,6 +18,8 @@ ul {
     list-style-type: none;
 }
 
+/* -------------------- HEADER/BANNER -------------------- */
+
 nav {
     background-color: var(--gray);
     position: fixed;
@@ -39,12 +41,13 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0 1vw;
+    padding: 0 .5vw;
 }
 
 nav ul li a {
     color: var(--light-blue);
-    border-bottom: 2px solid var(--light-blue);
+    border-bottom: 3px solid var(--light-blue);
+    padding: .5vw 1vw;
 }
 
 #banner {
@@ -73,4 +76,58 @@ nav ul li a {
     height: 30vh;
     width: auto;
     border-radius: 8px;
+}
+
+
+/* -------------------- MAIN -------------------- */
+
+
+main {
+    margin: 5vh 10vw 5vh 20vw;
+}
+
+.content-container h3{
+    position: relative;
+    right: 66vw;
+    top: 8vh;
+    text-align: right;
+}
+
+.content-container ul {
+    padding-left: 0;
+    margin-left:
+}
+
+.content {
+    border-left: 3px solid var(--dark-blue);
+    padding: 1vh 0 2vh 2.5vw;
+    margin-left: 4vw;
+}
+
+#work {
+    visibility: hidden;
+}
+
+#contact div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact div ul li {
+    display: inline-block;
+    margin: .5vw;
+    padding: .5vw;
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+#contact div ul li a {
+    color: var(--gray);
+}
+
+/* -------------------- FOOTER -------------------- */
+
+
+footer {
+    text-align: center;
 }
