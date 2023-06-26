@@ -4,13 +4,10 @@
     --dark-blue: rgb(55, 85, 115);
 }
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -21,3 +18,116 @@ ul {
     list-style-type: none;
 }
 
+/* -------------------- HEADER/BANNER -------------------- */
+
+nav {
+    background-color: var(--gray);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    padding: .5vh .5vw .5vh 2vw;
+    color: var(--gray);
+    background-color: var(--light-blue);
+}
+
+nav ul {
+    padding-right: 3vw;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 .5vw;
+}
+
+nav ul li a {
+    color: var(--light-blue);
+    border-bottom: 3px solid var(--light-blue);
+    padding: .5vw 1vw;
+}
+
+#banner {
+    width: 100%;
+    padding-top: 9.1vh;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner h2 {
+    float: right;
+    margin: 23vh 5vw 4vh 0;
+    padding: .3vw;
+    color: var(--gray);
+    background-color: var(--light-blue);
+}
+
+#banner-background {
+    width: 100%;
+    height: auto;
+}
+
+#headshot {
+    margin: 1vw;
+    height: 30vh;
+    width: auto;
+    border-radius: 8px;
+}
+
+
+/* -------------------- MAIN -------------------- */
+
+
+main {
+    margin: 5vh 10vw 5vh 20vw;
+}
+
+.content-container h3{
+    position: relative;
+    right: 66vw;
+    top: 8vh;
+    text-align: right;
+}
+
+.content-container ul {
+    padding-left: 0;
+    margin-left:
+}
+
+.content {
+    border-left: 3px solid var(--dark-blue);
+    padding: 1vh 0 2vh 2.5vw;
+    margin-left: 4vw;
+}
+
+#work {
+    visibility: hidden;
+}
+
+#contact div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact div ul li {
+    display: inline-block;
+    margin: .5vw;
+    padding: .5vw;
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+#contact div ul li a {
+    color: var(--gray);
+}
+
+/* -------------------- FOOTER -------------------- */
+
+
+footer {
+    text-align: center;
+}
