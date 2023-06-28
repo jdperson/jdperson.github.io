@@ -8,6 +8,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 a {
@@ -86,20 +88,20 @@ nav ul li a {
 
 
 main {
-    margin: 0 30vw 5vh 20vw;
+    margin: 0 25vw 5vh 15vw;
 }
 
 .content-container h3{
     color: var(--dark-blue);
-    font-size: 24px;
+    font-size: 32px;
     position: relative;
-    right: 46vw;
-    top: 9vh;
+    right: 56vw;
+    top: 13vh;
     text-align: right;
 }
 
 .content-container#work h3 {
-    top: 6vh;
+    top: 8vh;
 }
 
 .content-container ul {
@@ -108,7 +110,7 @@ main {
 
 .content {
     border-left: 3px solid var(--dark-blue);
-    padding: 1vh 0 2vh 2.5vw;
+    padding: 1vh 0 1vh 2.5vw;
     margin-left: 4vw;
 }
 
@@ -140,7 +142,7 @@ main {
 }
 
 #work-container ul li:first-child .work-title {
-    top: -9vh;
+    top: -14vh;
 }
 
 #work-container ul li:first-child a img {
@@ -149,7 +151,7 @@ main {
 }
 
 #work-container ul li:not(:first-child) .work-title {
-    top: -9vh;
+    top: -13vh;
 }
 
 #work-container ul li:not(:first-child) a img {
@@ -174,6 +176,14 @@ main {
     position: relative;
     padding: 10px 5px 5px 10px;
     width:fit-content;
+}
+
+.work-title h4 {
+    font-size: 24px;
+}
+
+.work-title p {
+    font-size: 18px;
 }
 
 .work-title h4, p {
@@ -201,3 +211,57 @@ main {
 
 /* -------------------- MEDIA -------------------- */
 
+
+@media screen and (max-width: 1125px) {
+    main {
+        margin: 0 15vw 5vh 12vw;
+    }
+
+    .content-container h3 {
+        right: 68vw;
+
+    }
+
+    .work-title h4 {
+        font-size: 18px;
+    }
+
+    .work-title p {
+        font-size: 14px;
+    }
+
+    #work-container ul li:not(:first-child) .work-title {
+        top: -14vh;
+    }
+
+    #contact ul {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    main {
+        margin: 0 10vw 5vh 10vw;
+        padding-left: 5vw;
+    }
+
+    .content-container h3 {
+        right: 70vw;
+    }
+
+    #work-container ul li:first-child a img {
+        height: 30vh;
+    }
+
+    #work-container ul li:not(:first-child) .work-title {
+        top: -10vh;
+    }
+
+    #work-container ul li:not(:first-child) a img {
+        height: 12vh;
+    }
+
+    #contact ul {
+        font-size: 12px;
+    }
+}
